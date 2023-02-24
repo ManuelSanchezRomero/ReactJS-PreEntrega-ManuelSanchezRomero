@@ -1,11 +1,11 @@
 import React from "react";
 import IMG from "../../IMG/placeholder.png";
 
-export const ItemsList = () => {
-  return (
+export const ItemListContainer = () => {
+    return (
     <>
-      <h1 className="titulo"> Productos</h1>
-      <div className="productos">
+    <h1 className="titulo"> Productos</h1>
+    <div className="productos">
         
         <div className="producto">
           <a href="#">
@@ -133,7 +133,7 @@ export const ItemsList = () => {
           </div>
         </div>
 
-      </div>
+    </div>
     </>
-  );
+);
 };
