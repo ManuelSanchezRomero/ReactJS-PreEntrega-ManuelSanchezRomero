@@ -1,8 +1,9 @@
 
 import {  Navbar } from './components/Navbar';
-import { ItemListContainer } from './components/ItemListContainer/index';
+import { ItemListContainer } from './components/ItemListContainer/ItemListContainer';
 import './index.css'
 import 'boxicons'
+
 
 
 function App() {
