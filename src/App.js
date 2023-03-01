@@ -1,17 +1,20 @@
 
-import {  Navbar } from './components/Navbar';
-import { ItemListContainer } from './components/ItemListContainer/ItemListContainer';
+import Navbar  from './components/Navbar/Navbar';
+import ItemListContainer from './components/ItemlListContainer/ItemListContainer';
 import './index.css'
 import 'boxicons'
 
 
 
 function App() {
-  return ( 
+  return ( <>
       <div className='App'>
           <Navbar/>
-          <ItemListContainer/>
-      </div>
+
+        <ItemListContainer/>
+
+        </div>
+      </>
   );
 }
 

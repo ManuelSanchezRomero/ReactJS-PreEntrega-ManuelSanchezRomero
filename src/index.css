@@ -18,6 +18,7 @@
 
 header{
   margin-top: 10px;
+  margin-bottom: 200px;
   width: 97%;
   min-height: 100px;
   max-width: 1650px;
@@ -26,7 +27,7 @@ header{
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  position: fixed;
+  position: absolute;
   box-sizing: border-box;
   background-color: rgb(240, 240, 240);
   box-shadow: 0 5px 10px goldenrod;
@@ -109,12 +110,13 @@ header .cart span{
   text-align: center;
 }
 .productos{
-  padding: 5rem 0;
+  padding: 4rem 0;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
-  gap: 3rem 2rem;
+  gap: 30px 22px;
   box-sizing: border-box;
+  width: 600px;
 }
 .producto{
   display: flex;
@@ -126,6 +128,8 @@ header .cart span{
   padding: 5px 20px 20px 20px;
   background-color: rgb(202, 201, 201);
   transition: 0.2s;
+  max-width: 800px;
+  margin: 20px;
 }
 
 .producto:hover{
@@ -162,7 +166,7 @@ header .cart span{
 
 .producto__footer .precio{
   font-size: 2.5rem;
-  color: brown;
+  color: rgb(61, 42, 165);
   background-color: rgb(202, 201, 201);
 }
 

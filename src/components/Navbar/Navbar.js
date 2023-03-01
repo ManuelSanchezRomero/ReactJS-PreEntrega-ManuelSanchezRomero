@@ -1,8 +1,8 @@
 import React from 'react';
-import CartWidget from '../CartWidget/index'
+import CartWidget from '../CartWidget/CartWidget'
 
 
-export const Navbar = () =>{
+const Navbar = () =>{
     return(
         <header>
             <a href='./public/index.html'><h1>Siori</h1></a>
@@ -25,3 +25,5 @@ export const Navbar = () =>{
 
     )
 }
+
+export default Navbar;
