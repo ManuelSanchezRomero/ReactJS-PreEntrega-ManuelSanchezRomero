@@ -1,16 +1,17 @@
 import React from 'react'
-
+import '../../index.css'
+import { Link } from 'react-router-dom'
 
 const Items = (props) => {
   return (
 <>  
-
+    
     <div className='producto'>
-        <a href="#">
+    <Link Link to="/">
         <div className="producto__img">
           <img src={props.img} alt="imagen producto"/>
         </div>
-        </a>
+        </Link>
         <div className="producto__footer">
             <h1>{props.nombre}</h1>
             <p>{props.categoria}</p>
@@ -19,9 +20,9 @@ const Items = (props) => {
         <div className="boton__producto">
             <button className="btn">Añadir al carro</button>
             <div>
-                <a href="#" className="btn">
+                <Link Link to={props.url} className="btn" id={props.id}>
                 Vista
-                </a>
+                </Link>
             </div>
         </div>
     </div>

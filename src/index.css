@@ -110,26 +110,30 @@ header .cart span{
   text-align: center;
 }
 .productos{
-  padding: 4rem 0;
+  padding: 15rem 0 2rem 0;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  grid-template-columns: repeat(3fr);
+  grid-template-rows: auto;
   gap: 30px 22px;
   box-sizing: border-box;
-  width: 600px;
+  width: 500px;
 }
 .producto{
   display: flex;
   flex-direction: column;
+  justify-content: end;
   align-items: center;
   box-shadow: 1px 10px 10px 2px rgba(177, 175, 175, 0.5);
   border: 6px solid transparent;
   border-radius: 5px;
   padding: 5px 20px 20px 20px;
   background-color: rgb(202, 201, 201);
+  translate: 30px 250px;
   transition: 0.2s;
   max-width: 800px;
-  margin: 20px;
+  margin: 30px;
+  text-align: center;
 }
 
 .producto:hover{
