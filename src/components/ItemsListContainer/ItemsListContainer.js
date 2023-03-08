@@ -1,9 +1,7 @@
 import React, {useState} from 'react';
 import Items from '../Items/Items';
 
-
-
-const ItemsList = () => {
+const ItemsListContainer = () => {
     const [item]= useState(
         [{
             id: 1,
@@ -150,8 +148,6 @@ const ItemsList = () => {
         ]
         );
 
-        
-        
         return (
     <div>
         {item.map(art => {
@@ -167,5 +163,4 @@ const ItemsList = () => {
   )
 }
 
-export default ItemsList
-
+export default ItemsListContainer
