@@ -5,8 +5,7 @@ import 'boxicons'
 import Navbar  from './components/Navbar/Navbar';
 import ItemList from './components/ItemlList/ItemList';
 import Categoria from './components/Categoria/Categoria';
-import ItemDetail from './components/ItemDetail/ItemDetail';
-
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
 
 function App() {
   return ( <>
@@ -16,7 +15,7 @@ function App() {
             <Routes>
               <Route exact path="/" element={<ItemList/>}/>
               <Route exact path='/Categoria/:category' element={<Categoria/>}/>
-              <Route exact path='/Item/:itemId' element={<ItemDetail/>}/>
+              <Route exact path='/productos/:itemId' element={<ItemDetailContainer/>}/>
             </Routes>
           </div>
         </BrowserRouter>

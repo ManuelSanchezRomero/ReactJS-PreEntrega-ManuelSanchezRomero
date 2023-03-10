@@ -2,7 +2,10 @@ import React from 'react'
 import '../../index.css'
 import { Link } from 'react-router-dom'
 
+
 const Items = (props) => {
+
+
   return (
 <>  
     
@@ -20,8 +23,8 @@ const Items = (props) => {
         <div className="boton__producto">
             <button className="btn">Añadir al carro</button>
             <div>
-                <Link Link to={props.url} className="btn" id={props.id}>
-                Vista
+                <Link Link to={props.url} className="btn"  key={props.id}>
+                Info
                 </Link>
             </div>
         </div>
