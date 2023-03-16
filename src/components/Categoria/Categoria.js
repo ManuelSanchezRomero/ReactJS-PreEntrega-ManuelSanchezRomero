@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+
 import Items from '../Items/Items';
 import Navbar from '../Navbar/Navbar';
 
