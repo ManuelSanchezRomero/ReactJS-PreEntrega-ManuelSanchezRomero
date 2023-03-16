@@ -10,7 +10,7 @@ const ItemDetail = ({producto}) => {
             <img src={producto.img} alt="imagen producto"/>
         </div>
         </Link>
-        <div className="producto__footer" key={producto.id}>
+        <div className="producto__footer">
             <h1>{producto.nombre}</h1>
             <p>{producto.categoria}</p>
             <p className="precio">${producto.precio}</p>

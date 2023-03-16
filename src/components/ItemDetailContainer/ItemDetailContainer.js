@@ -1,10 +1,42 @@
-import React, { useState, useEffect, usee} from 'react';
+import React, { useState, useEffect,} from 'react';
 import ItemDetail from '../ItemDetail/ItemDetail';
+import { useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+
+
+const ItemDetailContainer = () => {
+  const [producto, setProducto] = useState();
+  const params = useParams();
+  const { id } = params;
+
+  useEffect(() => {
+    fetch('/ListaArticulos.json', {
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+      .then(response => response.json())
+      .then(data => console.log(params))
+      .catch(error => console.error(error))
+      .then((e) => {
+        setTimeout(() => {
+          setProducto(e.find((item) => item.id === parseInt(id)));
+        },5000);
+      })
+  },);
+  
+  return (
+    <>
+      {typeof producto === "undefined" ? 
+        <h1 className="loading">Cargando...</h1> : <ItemDetail producto= {producto} />
+      }
+    </>
+  );}
+
+export default ItemDetailContainer;
+
 
 // const [ListaArt]= useState(
-
-
-
     //     [{
     //         id: 1,
     //         url: "/productos/1",
@@ -155,26 +187,4 @@ import ItemDetail from '../ItemDetail/ItemDetail';
       //     const art = ListaArt.find((art) => art.id === parseInt(id));
       //     setSelectedItem(art);
       // }, [ListaArt, id]);
-      const ItemDetailContainer = () => {
-        const [producto, setProducto] = useState();
 
-        useEffect(() => {
-          fetch("../../ListaArticulos.json")
-            .then((res) => res.json())
-            .then((e) => {
-              setTimeout(() => {
-                setProducto(e.find((item) => item.id === ":id"));
-              }, 1000);
-            })
-            .catch((error) => console.error(error));
-        }, []);
-        
-        return (
-          <>
-            {typeof producto === "undefined" ? 
-              <h1 className="loading">Cargando...</h1>    :   <ItemDetail prod={producto} />
-            }
-          </>
-        );}
-
-export default ItemDetailContainer;

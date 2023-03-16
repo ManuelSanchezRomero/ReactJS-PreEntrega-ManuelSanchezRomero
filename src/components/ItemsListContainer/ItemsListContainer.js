@@ -4,6 +4,7 @@ import Items from '../Items/Items';
 const ItemsListContainer = () => {
     const [item]= useState(
         [{
+            key: 1,
             id: 1,
             url: "/productos/1",
             nombre: "Campera",
@@ -12,6 +13,7 @@ const ItemsListContainer = () => {
             img: './IMG/placeholder.png'
           },
           {
+            key: 2,
             id: 2,
             url: "/productos/2",
             nombre: "Buzo",
@@ -21,6 +23,7 @@ const ItemsListContainer = () => {
           
           },
           {
+            key: 3,
             id: 3,
             url: "/productos/3",
             nombre: "Guantes",
@@ -30,6 +33,7 @@ const ItemsListContainer = () => {
           
           },
           {
+            key: 4,
             id: 4,
             url: "/productos/4",
             nombre: "Pantalon",
@@ -39,6 +43,7 @@ const ItemsListContainer = () => {
           
           },
           {
+            key: 5,
             id: 5,
             url: "/productos/5",
             nombre: "Remera",
@@ -48,6 +53,7 @@ const ItemsListContainer = () => {
           
           },
           {
+            key: 6,
             id: 6,
             url: "/productos/6",
             nombre: "Malla",
@@ -57,6 +63,7 @@ const ItemsListContainer = () => {
           
           },
           {
+            key: 7,
             id: 7,
             url: "/productos/7",
             nombre: "Sandalias",
@@ -65,6 +72,7 @@ const ItemsListContainer = () => {
             img: '../../IMG/placeholder.png'
           },
           {
+            key: 8,
             id: 8,
             url: "/productos/8",
             nombre: "Gorra",
@@ -74,6 +82,7 @@ const ItemsListContainer = () => {
           
           },
           {
+            key: 9,
             id: 9,
             url: "/productos/9",
             nombre: "Camiseta de Futbol",
@@ -83,6 +92,7 @@ const ItemsListContainer = () => {
           
           },
           {
+            key: 10,
             id: 10,
             url: "/productos/10",
             nombre: "Pantalones cortos",
@@ -92,6 +102,7 @@ const ItemsListContainer = () => {
           
           },
           {
+            key: 11,
             id: 11,
             url: "/productos/11",
             nombre: "Lentes de sol",
@@ -101,6 +112,7 @@ const ItemsListContainer = () => {
           
           },
           {
+            key: 12,
             id: 12,
             url: "/productos/12",
             nombre: "Zapatillas",
@@ -110,6 +122,7 @@ const ItemsListContainer = () => {
           
           },
           {
+            key: 13,
             id: 13,
             url: "/productos/13",
             nombre: "Cadenas",
@@ -119,6 +132,7 @@ const ItemsListContainer = () => {
           
           },
           {
+            key: 14,
             id: 14,
             url: "/productos/14",
             nombre: "Bufandas",
@@ -128,6 +142,7 @@ const ItemsListContainer = () => {
             
           },
           {
+            key: 15,
             id: 15,
             url: "/productos/15",
             nombre: "Pilusos",
@@ -137,6 +152,7 @@ const ItemsListContainer = () => {
             
           },
           {
+            key: 16,
             id: 16,
             url: "/productos/16",
             nombre: "LLaveros",
@@ -155,8 +171,9 @@ const ItemsListContainer = () => {
             nombre={art.nombre}
             categoria={art.categoria}
             precio={art.precio}
-            id={art.id}
             url={art.url}
+            id={art.id}
+            key={art.key}
             />
         })}
     </div>
